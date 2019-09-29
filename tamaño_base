@@ -1,0 +1,70 @@
+//codigo realizado en C
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int n,m,b,q,w,a,s,d,f,g,h,j,k,l,p,o,i,u,y,t,r;
+	int calcular_fila=0;
+	int calcular_pagina=0;
+	double calcular_base=0;
+	
+	printf("Calcular el tamaño de la base de datos.\n\n");
+	printf("Nota importante: los datos proporcionados deben estan en bytes\n\n");
+	
+	printf("\nIngrese el valor de el dato ID: ");
+	scanf("%i", &n);
+	printf("\n\nIngrese el valor de el dato Nombre del hospital: ");
+	scanf("%i", &m);
+	printf("\n\nIngrese el valor de el dato direccion: ");
+	scanf("%i", &b);
+	printf("\n\nIngrese el valor de el dato numero de trabajadores: ");
+	scanf("%i", &a);
+	printf("\n\nIngrese el valor de el dato especialidad: ");
+	scanf("%i", &s);
+	printf("\n\nIngrese el valor de el dato horario: ");
+	scanf("%i", &d);
+	printf("\n\nIngrese el valor de el dato pasiente: ");
+	scanf("%i", &f);
+	printf("\n\nIngrese el valor de el dato camas: ");
+	scanf("%i", &g);
+	printf("\n\nIngrese el valor de el dato salas: ");
+	scanf("%i", &h);
+	printf("\n\nIngrese el valor de el dato elevadores: ");
+	scanf("%i", &j);
+	printf("\n\nIngrese el valor de el dato edificios: ");
+	scanf("%i", &k);
+	printf("\n\nIngrese el valor de el dato extencion: ");
+	scanf("%i", &l);
+	printf("\n\nIngrese el valor de el dato telefono: ");
+	scanf("%i", &p);
+	printf("\n\nIngrese el valor de el dato correo: ");
+	scanf("%i", &o);
+	printf("\n\nIngrese el valor de el dato pagina web: ");
+	scanf("%i", &i);
+	printf("\n\nIngrese el valor de el dato director: ");
+	scanf("%i", &u);
+	printf("\n\nIngrese el valor de el dato sector publico/privado: ");
+	scanf("%i", &y);
+	printf("\n\nIngrese el valor de el dato ranking: ");
+	scanf("%i", &t);
+	printf("\n\nIngrese el valor de el dato fecha de apertura: ");
+	scanf("%i", &r);
+	calcular_fila=n+m+b+a+s+d+f+g+h+j+k+l+p+o+i+u+y+t+r;
+	
+	printf("\n\nIngrese el numero de filas por pagina: ");
+	scanf("%i", &q);
+	calcular_pagina= calcular_fila*q;
+	
+	printf("\n\nIngrese el numero de registros: ");
+	scanf("%i", &w);
+	calcular_base= calcular_pagina * w;
+	
+	printf("\n\nEl valor de la fila es: %i bytes", calcular_fila);
+	
+	printf("\n\nEl valor de la pagina es: %i bytes", calcular_pagina );
+	
+	printf("\n\nEl valor de la pagina es: %i bytes\n", calcular_base );
+	
+	
+	}
